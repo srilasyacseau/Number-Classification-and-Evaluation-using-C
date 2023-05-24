@@ -1,0 +1,38 @@
+#include <stdio.h>
+int main()
+{
+    int a;
+    
+    printf("\tEnter the value of 'a': ");
+    scanf("%d",&a);
+    
+    printf("\n");
+    
+    if(a < 1 || a > 100)
+    {
+        
+        printf("\n\t%d does not lie between 1 and 100.",a);
+        
+    }
+    
+    if(a%2 == 0 && a > 1 && a < 100)
+    {
+        if(a == 2)
+        {
+            printf("\n\t%d is even and is equal to 2.",a);
+        }
+        
+        else
+        {
+            printf("\n\t%d is even but not equal to 2.",a);
+        }
+    }
+    
+    else if(a%2 != 0)
+    {
+         printf("\n\t%d is not even, it is odd.",a);
+    }
+    
+    
+    return 0;
+}
